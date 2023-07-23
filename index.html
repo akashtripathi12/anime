@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo"><a href="https://en.wikipedia.org/wiki/Anime" target="_blank"><i>ANIME</i></a></h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="dragonball.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring This World</h3>
+            <a href="https://aniwatch.to/" target="_blank">Explore now</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.instagram.com/akkkii.tripathi/" target="_blank"><img src="ig1.png"></a></li>
+            <li><a href="https://twitter.com/AkashTrips12" target="_blank"><img src="tw.png"></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="https://akashtripathi12.github.io/anime/" target="_blank">Home</a></li>
+            <li><a href="https://www.crunchyroll.com/videos/new" target="_blank">Latest Updates</a></li>
+            <li><a href="https://www.crunchyroll.com/" target="_blank">Destination</a></li>
+            <li><a href="https://www.linkedin.com/in/akash-tripathi-433171253" target="_blank">Contact me</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+        
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
